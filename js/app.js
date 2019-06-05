@@ -25,10 +25,10 @@ var Medewerker = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Medewerker.prototype.jarig = function () {
-        return this.leeftijd + 1;
+        this.leeftijd + 1;
     };
     return Medewerker;
 }(Persoon));
 var jan = new Medewerker('Jan', 10, 'male');
 var eduard = new Medewerker('Eduard', 11, 'male');
-alert(jan.jarig());
+alert(jan.naam);

@@ -18,16 +18,16 @@ abstract class Persoon implements Mens {
         
     }
 
-    abstract jarig();
+    abstract jarig() : void;
 }
 
 class Medewerker extends Persoon {
-    jarig() {
-        return this.leeftijd + 1;
+    jarig(): void {
+        this.leeftijd + 1;
     }
-}
 
+}
 var jan = new Medewerker('Jan', 10, 'male');
 var eduard = new Medewerker('Eduard', 11, 'male');
 
-alert(jan.jarig());
+alert(jan.naam);
